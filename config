@@ -1,0 +1,3 @@
+# Machine defaults — edit or use config.local to override (not committed)
+dropbox_root=/Users/amir/Dropbox
+scan_root=/Users/amir/Dropbox/CodingProjects

@@ -1,0 +1,14 @@
+# Copy to config.local (gitignored) or edit config
+# Lines: key=value. Leading ~ expands to $HOME (use ~/Dropbox, not $HOME/~/Dropbox).
+
+dropbox_root=~/Dropbox
+scan_root=~/Dropbox/CodingProjects
+
+# Or full paths (also fine):
+# dropbox_root=/Users/you/Dropbox
+# scan_root=/Users/you/Dropbox/CodingProjects
+
+# scan_root=~/Library/CloudStorage/Dropbox-Personal/OtherCode
+
+# Optional: show top N largest dirs in scan (default 15)
+# scan_top=15

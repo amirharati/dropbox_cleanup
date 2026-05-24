@@ -1,0 +1,67 @@
+# ------------------------------------------------------------
+# Dropbox Ignore Rules (canonical copy — dropbox_cleanup repo)
+# ------------------------------------------------------------
+# Deploy: ./dropbox-cleanup.sh sync-rules
+# Guide: https://help.dropbox.com/sync/how-to-prevent-files-from-syncing
+# ------------------------------------------------------------
+
+# --- OS / editor noise ---
+.DS_Store
+Thumbs.db
+ehthumbs.db
+._*
+
+# --- Secrets (never upload to Dropbox cloud) ---
+.env
+.env.local
+.env.*.local
+
+# --- JavaScript / TypeScript ---
+node_modules/
+dist/
+dist-ssr/
+.next/
+.turbo/
+out/
+coverage/
+.nyc_output/
+*.local
+
+# --- Python ---
+.venv/
+venv/
+__pycache__/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# --- Rust / Java / generic builds ---
+target/
+build/
+
+# --- Flutter / mobile ---
+.dart_tool/
+.gradle/
+Pods/
+*.iml
+
+# --- Logs & temp ---
+*.log
+*.tmp
+*.temp
+logs/
+temp/
+tmp/
+
+# --- Local caches & experiment output ---
+.cache/
+.parcel-cache/
+experiments/
+
+# ML training output (scoped — avoid matching node_modules/.../runs)
+/CodingProjects/personal_tools/explsore_LLM_proxies/context_optimizer/runs/
+
+# ML tooling
+wandb/
+mlruns/
+.huggingface/
